@@ -50,7 +50,7 @@ The AI Email Quarantine System uses machine learning and heuristic analysis to:
 •	Database: MySQL
 •	Email Protocols: IMAP 
 •	Email Auth: SPF / DKIM validation
-•	AI / ML: NLP, Machine Learning Model, TF-IDF, Logistic Regression
+•	AI / ML: Machine Learning Model, TF-IDF(vectorization), Logistic Regression
 •	Libraries:    
     o	flask
     o	imaplib    
@@ -213,8 +213,9 @@ AI-Email-Quarantine-System/
 </p>
 
 👤 Author    
-AF4creator    
-GitHub: https://github.com/AntofelixA    
+Anto Felix A
+GitHub: https://github.com/AntofelixA
+LinkedIn: https://www.linkedin.com/in/anto-felix/
 
 📜 License    
 This project is open-source and intended for educational and research purposes.    
