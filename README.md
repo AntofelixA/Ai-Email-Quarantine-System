@@ -45,25 +45,88 @@ The AI Email Quarantine System uses machine learning and heuristic analysis to:
 
 🛠️ Technologies Used    
 •	Programming Language: Python    
-•	Email Protocols: IMAP / POP3    
-•	AI / ML: NLP, Machine Learning Models    
+•	Frontend: HTML, CSS
+•	Framework: Flask
+•	Database: MySQL
+•	Email Protocols: IMAP 
+•	Email Auth: SPF / DKIM validation
+•	AI / ML: NLP, Machine Learning Model, TF-IDF, Logistic Regression
 •	Libraries:    
+    o	flask
     o	imaplib    
     o	email    
     o	scikit-learn    
     o	logging    
 
 📂 Project Structure
-Ai-Email-Quarantine-System/    
-│    
-├── main.py    
-├── email_handler.py    
-├── ai_analyzer.py    
-├── quarantine_manager.py    
-├── config.py    
-├── logs/    
-├── requirements.txt    
-└── README.md    
+```text
+AI-Email-Quarantine-System/
+│
+├── app/
+│   ├── api/
+│   │   ├── __init__.py
+│   │   ├── auth.py
+│   │   ├── dashboard.py
+│   │   ├── email.py
+│   │   ├── scanner.py
+│   │   └── ...
+│   │
+│   ├── core/
+│   │   ├── config.py
+│   │   ├── security.py
+│   │   └── ...
+│   │
+│   ├── database/
+│   │   ├── db.py
+│   │   ├── models.py
+│   │   └── ...
+│   │
+│   ├── middleware/
+│   │   └── ...
+│   │
+│   ├── ml/
+│   │   ├── feature_engineering.py
+│   │   ├── model.py
+│   │   ├── predictor.py
+│   │   └── ...
+│   │
+│   ├── services/
+│   │   ├── email_service.py
+│   │   ├── quarantine_service.py
+│   │   └── ...
+│   │
+│   ├── static/
+│   │   ├── css/
+│   │   ├── js/
+│   │   └── images/
+│   │
+│   ├── templates/
+│   │   ├── dashboard.html
+│   │   ├── login.html
+│   │   └── ...
+│   │
+│   └── utils/
+│       ├── __pycache__/
+│       ├── helpers.py
+│       ├── logger.py
+│       └── __init__.py
+│
+├── config.py
+├── run.py
+│
+├── ml_training/
+│   └── Dataset(SpamAssasin-edited)...
+│
+├── scripts/
+│   └── run_email_scan.py
+│
+├── .env.example
+├── LICENSE
+├── app.py
+├── requirements.txt
+├── test_env.py
+└── README.md
+``` 
 
 🚀 How It Works    
 1.	Connects to the email server    
@@ -89,11 +152,69 @@ Ai-Email-Quarantine-System/
 •	Deep learning-based threat detection    
 •	Integration with VirusTotal / external threat APIs        
 •	Real-time alerts and notifications        
-•	Multi-mailbox support        
+•	Multi-mailbox support    
+
+   Screenshots
+
+<p align="center">
+  <img width="1005" height="464" alt="Homepage image" src="https://github.com/user-attachments/assets/2f06cb38-b6aa-4578-ad9f-bd5262cd3765" />
+</p>
+
+<p align="center">
+  <b>Fig-1: Home Page of AI-Email Quarantine System </b>
+</p>
+
+<p align="center">
+  <img width="1004" height="474" alt="Dashboard image" src="https://github.com/user-attachments/assets/ebbd5ec6-c5f4-48a4-8d09-e5ac442ad764" />
+</p>
+
+<p align="center">
+  <b>Fig-2: SOC-style dashboard Page of AI-Email Quarantine System </b>
+</p>
+
+<p align="center">
+  <img width="1005" height="480" alt="image" src="https://github.com/user-attachments/assets/9d681887-7318-4142-adf7-a5d743b0edb6" />
+</p>
+
+<p align="center">
+  <b>Fig-3: User Interface Displaying Legitimate (Safe) Emails with ML-Based Risk Scores </b>
+</p>
+
+<p align="center">
+  <img width="1005" height="483" alt="image" src="https://github.com/user-attachments/assets/bb0e0803-f43b-4787-820d-1c1d5f8ceec7" />
+</p>
+
+<p align="center">
+  <b>Fig-4: Detailed View of a Safe Email with ML-Based Risk Score  </b>
+</p>
+
+<p align="center">
+  <img width="692" height="976" alt="image" src="https://github.com/user-attachments/assets/17a55b58-b399-4d1c-b950-a30f36d5e17e" />
+</p>
+
+<p align="center">
+  <b>Fig-5: Email Scan Report Generated in PDF Format  </b>
+</p>
+
+<p align="center">
+  <img width="763" height="982" alt="image" src="https://github.com/user-attachments/assets/64d5daa5-6ade-4bae-aca9-9c7ebb29f193" />
+</p>
+
+<p align="center">
+  <b>Fig-6: Email Scan Report Generated in DOCX Format  </b>
+</p>
+
+<p align="center">
+  <img width="812" height="1022" alt="image" src="https://github.com/user-attachments/assets/f0e5e1ba-9f28-4fc8-a073-b20e8f8ec4f1" />
+</p>
+
+<p align="center">
+  <b>Fig-7: Email Scan Report Generated in TXT Format  </b>
+</p>
 
 👤 Author    
 AF4creator    
-GitHub: https://github.com/AF4creator    
+GitHub: https://github.com/AntofelixA    
 
 📜 License    
 This project is open-source and intended for educational and research purposes.    
