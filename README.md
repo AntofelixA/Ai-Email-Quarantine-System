@@ -1,4 +1,6 @@
-🤖 AI Email Quarantine System    
+<h1 align="center">AI-EMAIL QUARANTINE SYSTEM</h1>
+🤖 Introduction 
+
 An AI-powered Email Quarantine System designed to automatically analyze incoming emails, detect potential threats such as spam and phishing, and quarantine suspicious messages before they reach the inbox. This project adds an intelligent security layer to traditional email filtering systems.
 
 📌 Project Overview    
@@ -213,9 +215,9 @@ AI-Email-Quarantine-System/
 </p>
 
 👤 Author    
-Anto Felix A
-GitHub: https://github.com/AntofelixA
-LinkedIn: https://www.linkedin.com/in/anto-felix/
+**Anto Felix A**
+- GitHub: https://github.com/AntofelixA
+- LinkedIn: https://www.linkedin.com/in/anto-felix/
 
 📜 License    
 This project is open-source and intended for educational and research purposes.    
