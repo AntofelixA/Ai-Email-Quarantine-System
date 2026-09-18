@@ -1,4 +1,9 @@
 <h1 align="center">AI-EMAIL QUARANTINE SYSTEM</h1>
+<p align="center">
+  <a href="https://antofelix.pythonanywhere.com/">
+    <img src="https://img.shields.io/badge/🚀 Live Demo-Click Here-brightgreen?style=for-the-badge" alt="Live Demo"/>
+  </a>
+</p>
 🤖 Introduction 
 
 An AI-powered Email Quarantine System designed to automatically analyze incoming emails, detect potential threats such as spam and phishing, and quarantine suspicious messages before they reach the inbox. This project adds an intelligent security layer to traditional email filtering systems.
@@ -28,7 +33,7 @@ The AI Email Quarantine System uses machine learning and heuristic analysis to:
     o	Displays analysis results for review    
 •	⚙️ Configurable & Extendable    
     o	Easy to adjust thresholds and rules    
-    o	Can be enhanced with additional AI models or APIs    
+    o	Can be enhanced with additional AI models or APIs   
 
 🏗️ System Architecture    
 1.	Email Fetcher    
